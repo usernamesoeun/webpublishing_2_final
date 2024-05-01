@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>
+		해충퇴치 향갑노리개
+	</title>
+
+<style type="text/css">
+
+	@font-face {
+    font-family: 'ChosunSm';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.1/ChosunSm.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;}
+
+
+
+    html{font-family: 'ChosunSm'}
+
+	html{scroll-behavior: smooth;}
+	html{line-height: 1.85}
+
+
+	h1, h2, h3{font-weight: normal; font-size: 1.5rem}
+	h1{font-size: 3rem;}
+	h2{margin-left: 15px;}
+	p{font-size: 1.2rem}
+	body{margin: 0px;}
+	nav{position: fixed; top: 0; left: 0; right: 0; background: black; color: white;}
+
+	header{margin-top:50px ;margin-bottom: 100px}
+
+
+	img {width: 100%; height: auto; overflow: hidden;}
+
+	footer {background-color: black; color: white; padding-top: 30px; padding-bottom: 30px; text-align: center;}
+
+	.wrap{width: 800px; margin: auto;}
+	.flex{display: flex; flex-wrap:wrap; padding: 10px 0px; gap: 10%}
+	.menu {width: 800px;}
+	.menu li{list-style-type: none; margin-left: auto;margin-right: auto;}
+	.menu li a{display: block; padding: 10px 20px;
+			   text-decoration: none; color: white; gap: 0%}
+	.menu li a:hover{background: white;
+			         color:black; border-radius: 30px}
+
+	.logo{line-height: 30px; margin: auto; width: 800px; text-align: center;font-weight: bold;}
+
+	.round{width: 150px; display: block; padding:;
+			   text-decoration: none; color: white; gap: 0%; border-radius: 60px;background-color: black;margin-left: auto;margin-right: auto; text-align: ;}
+
+	.img{background-size: cover;}
+
+	.background{background:url(smcaback.png); background-attachment: fixed; background: cover; background: opacity: 0.8; height: 700px; background-blend-mode: overlay;}
+			
+
+		.container {display: grid;
+			gap: 0px;
+			padding: 0px;
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-rows:repeat(45, 360px);
+
+
+		  .grid-item {
+		    padding: 0px;
+		    text-align: left; overflow: hidden;}
+
+		  .grid-item img {
+		    width: 100%;
+		    height: auto; overflow: hidden;}
+
+
+		  .grid-item p {margin-left: 15px; margin-top: 30px} 
+
+
+			.grid-item:nth-child(1) {grid-column: 1 /4;
+								grid-row: 1/3;
+								background-color: lightblue;}
+
+			.grid-item:nth-child(2) {grid-column-end: 4/5;
+									grid-row: 1/3; 
+								background-color:greenyellow; }
+			.grid-item:nth-child(3) {grid-column: 1/3;
+									grid-row: 3/5;
+									background-color: beige;}
+			.grid-item:nth-child(4) {grid-column: 3/5;
+									grid-row: 3/4; background-color:white; }
+			.grid-item:nth-child(5) {grid-column: 3/5; 
+										grid-row: 4/5; 
+										background-color: lightblue;}
+			.grid-item:nth-child(6) { grid-column: 1/3; 
+										grid-row: 5/6;
+										background-color: white;}
+			.grid-item:nth-child(7) { grid-column: 3/4; 
+										grid-row: 5/6;
+										background-color: lightpink;}
+			.grid-item:nth-child(8) { grid-column: 3/5; 
+										grid-row: 6/7;
+										background-color: white}
+			.grid-item:nth-child(9) { grid-column: 1/3; 
+										grid-row: 7/8}
+			.grid-item:nth-child(10) { grid-column: 3/5; 
+										grid-row: 7/8;
+										background-color: beige;}
+			.grid-item:nth-child(11) { grid-column: 1/4; 
+										grid-row: 8/10;
+										background-color: lightblue;}
+			.grid-item:nth-child(12) { grid-column: 1/3; 
+										grid-row: 10/11;
+										background-color: beige;}
+			.grid-item:nth-child(13) { grid-column: 3/5; 
+										grid-row: 10/11}
+			.grid-item:nth-child(14) { grid-column: 1/3; 
+										grid-row: 11/13}
+			.grid-item:nth-child(15) { grid-column: 3/5; 
+										grid-row: 11/13;
+										background-color: lightpink;}
+			.grid-item:nth-child(16) { grid-column: 4/5; 
+										grid-row: 13/14;
+										background-color: beige}
+			.grid-item:nth-child(17) { grid-column: 1/5; 
+										grid-row: 14/17;
+										background-color: lightblue;}
+			.grid-item:nth-child(18) { grid-column: 4/5; 
+										grid-row: 18/29;
+										background-color: beige;}
+			.grid-item:nth-child(19) { grid-column: 1/4; 
+										grid-row: 18/21;
+										background-color: lightpink;}
+			.grid-item:nth-child(20) { grid-column: 1/4; 
+										grid-row: 22/25;
+										background-color: white;}
+			.grid-item:nth-child(21) { grid-column: 1/4; 
+										grid-row: 26/29;
+										background-color: lightpink;}
+
+			.grid-item:nth-child(22) { grid-column: 1/5; 
+										grid-row: 30/33;
+										background-color: lightblue;}
+			.grid-item:nth-child(23) { grid-column: 1/2; 
+										grid-row: 33/34;
+										background-color: beige;}
+			.grid-item:nth-child(24) { grid-column: 2/3; 
+										grid-row: 33/34;
+										background-color: lightpink;}
+			.grid-item:nth-child(25) { grid-column: 3/4; 
+										grid-row: 34/35;
+										background-color: beige;}
+			.grid-item:nth-child(26) { grid-column: 3/5; 
+										grid-row: 35/37;
+										background-color: lightblue;}
+			.grid-item:nth-child(27) { grid-column: 2/3; 
+										grid-row: 36/37;
+										background-color: greenyellow;}
+			.grid-item:nth-child(28) { grid-column: 1/5; 
+										grid-row: 38/39;
+										background-color: white;}
+			.grid-item:nth-child(29) { grid-column: 1/5; 
+										grid-row: 39/41;
+										background-color: beige;}
+			.grid-item:nth-child(30) { grid-column: 1/2; 
+										grid-row: 41/42;
+										background-color: lightblue;}
+			.grid-item:nth-child(31) { grid-column: 2/4; 
+										grid-row: 41/42;
+										background-color: lightpink;}
+			.grid-item:nth-child(32) { grid-column: 4/5; 
+										grid-row: 42/43;
+										background-color: greenyellow;}
+			.grid-item:nth-child(33) { grid-column: 1/4; 
+										grid-row: 42/43;
+										background-color: white;}
+			.grid-item:nth-child(34) { grid-column: 1/5; 
+										grid-row: 44/45;
+										background-color: white;}
+			.grid-item:nth-child(35) { grid-column: 1/5; 
+										grid-row: 45/46;
+										background-color: beige;}
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+	<nav>
+		 <div class="wrap flex">
+		                <div class="logo">해충퇴치 향갑노리개</div>
+		                <ul class="menu flex">
+		                        <li><a href="#a">처음으로</a></li>
+		                        <li><a href="#b">향갑노리개</a></li>
+		                        <li><a href="#c">제품소개</a></li>
+		                        <li><a href="#d">스토어</a></li>
+		                </ul>
+		        </div>
+	</nav>
+
+	<header>
+
+	<section id="a">
+			<img src="header.png">		
+	</section>
+
+	</header>
+
+	<section>
+		<div class="background">
+		<h3> <em>향기롭고 쾌적한 당신의 계절을 위해</em></h3>
+		<h1> 해충퇴치 향갑 노리개</h1>
+				<p>추웠던 겨울이 지나 마음도 옷도 가벼워지는 계절이 성큼 다가왔습니다.<br> 하지만 얇아지는 옷 만큼 많아지는 벌레가 두려운 당신.<br> 그런 당신을 위해 서울공예박물관에서 준비한 특별한 프로젝트를 소개합니다</p>
+		
+	</section>
+
+	
+
+	<section>
+			<div class="container">
+
+				  <div class="grid-item" id="b">
+				  	<img src="nori1.png">
+				  </div>
+
+				 <div class="grid-item">
+				 	<img src="nori2.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="nori3.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<h2>향갑노리개</h2>
+				 	<p>
+					향을 담은 갑(상자)을 단 노리개로, 옛날 우리 선조들은 향갑 안에 붉은 한지로 감싼 사향(머스크 향의 베이스)을 넣고 다니다 구급약품으로도 사용하기도 했습니다.</p>
+				 </div>
+
+				  <div class="grid-item">
+				 	<img src="nori4.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<h2>우리나라의 향</h2>
+				 	<p>
+					우리나라는 <strong>불교의 영향</strong>으로 향료가 들어왔다 추정하는데, <br>향을 피우면 부처님이 내려와 기원하는 이의 소망을 들어준다는 믿음과 불교가 점차 민간으로 전파됨에 따라 향의 사용도 활발히 이루어지게 되었습니다</p>
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="nori5.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<p>향은 몸에 지니고 다니며 <strong>향기를 발산</strong>하고, 나쁜 냄새를 감추는 치장용 이외에도 치료나 병의 예방 좀벌레 예방과 같은 <strong>실용적 수단</strong>, 귀신을 물리치고 정신을 맑게한다는 <strong>주술적 수단</strong> 등 다양한 의미로 사용되며 향이 중요하게 자리잡습니다</p>
+				 </div>
+
+				 <div class="grid-item">
+				 	<p>향의 필요성이 증대되고, 집단에서 개인의 소유로 확대됨에 따라 향을 소지하고 다니는 방법의 하나로 향집(향낭과 향갑)이 등장했고, 몸에 지니기 위해 주로 의복에 패용되며 노리개에 이용되기 시작합니다.</p>
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="nori6.png">
+				 </div>
+
+				  <div class="grid-item">
+				 	<img src="nori7.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="nori8.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<h2>노리개의 등장</h2>
+				 	<p>
+					노리개의 기원은 확실하게 규명되지 않았으나 『삼국유사』의 기록 등에 따르면 삼국시대 요패腰佩의 여러 장식에서 비롯되었을 것으로 추측됩니다</p>
+				</div>
+
+				<div class="grid-item">
+				 	<h2>고려시대에 등장한 향갑노리개</h2>
+				 	<p>
+					고려시대 인종 때 고려를 방문했던 송나라 사신이 지은 『선화봉사 고려도경』에 기록이 남아있는데 “부인은···비단으로 만든 향 주머니를 패용한다. ”라는 내용에서 향낭이 달린 노리개를 착용했다는 것이 확인됩니다</p>
+					<p>이렇게 옛부터 사용된 향갑노리개는 움직일 때마다 부드럽고 은은한 향을 내며 기품 있는 멋을 냈으며, 향갑에 색채나 자수, 문양, 매듭, 술 등의 장식적인 요소들을 더해 복식과 조화를 이뤘습니다</p>
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="nori9.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="nori10.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="nori11.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<p>노리개</p>
+				 	<div class="img2">
+				 	<img src="1.png">
+					 </div>
+				 </div>
+
+				 <div class="grid-item" id="c">
+				 	<h2>Project_해충퇴치 향갑노리개</h2>
+				 	<br>
+				 	<p>
+					다양한 용도로 활용이 가능했던 향갑노리개 이번 서울공예박물관이 선정한 올해의 브랜드, 산호 스튜디오와 나스첸카와 협업을 통해 해충퇴치 기능 강화로 더욱 실용적이고 현대적인 감각으로 탄생했습니다</p>
+				 </div>
+
+				 <div class="grid-item">
+				 	<h2>효과적인 방충효과</h2>
+				 	<br><p>
+					라벤더, 레몬 그라스 등 천연 허브조합 기반 방충액으로 인체에 무해하며 효과적인 해충퇴치 효과</p>
+					<img src="x.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<h2>Scent</h2>
+				 	<br><p>
+					Top note_플로럴(라벤더)의 향이 레몬그라스향과 어우러져 달콤하고 상큼한 향을 선사합니다<br>
+					Middle note_은은한 시트러스의 향이 퍼지며 머스크향으로 품위있는 마무리를 선사합니다<br>
+					Base note_사향(머스크)향이 바닐라와 어우러져 부드럽고 은은한 달콤함을 선사합니다</p>
+				 </div>
+
+				 <div class="grid-item">
+				 	<h2>활용</h2>
+				 	<p>
+					바지 벨트에 착용하거나 차량 장식, 가방 키링 등 다양한 용도로 활용 가능합니다</p>
+					<img src="use1.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="use2.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="use3.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="use4.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="use5.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="use6.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<h2>기본 상품구성</h2>
+				 	<p>향갑 노리개+ 향갑 전용 천연 방충 석고타블렛+키링(선택)</p>
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="package.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="package1.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="package2.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<img src="package3.png">
+				 </div>
+
+				 <div class="grid-item">
+				 	<h2>가격</h2>
+				 	<p>
+					구성1_향갑 노리개+ 향갑 전용 천연 방충 석고타블렛 _33,000원
+					구성2_향갑 노리개+ 향갑 전용 천연 방충 석고타블렛+ O링 키링고리_34,000원
+					추가1_향갑 노리개 단일_27,000원
+					추가2_향갑 전용 천연 방충 석고타블렛_5,000원
+					추가3_O링 키링고리_1,000원</p>
+				 </div>
+
+				 <div class="grid-item" id="d">
+				 	<div class="round">
+				 	<div class="wrap">
+				 	<p>스토어 바로가기</p>
+				 </div>
+					</div>
+				 </div>
+
+				 <div class="grid-item">
+				 	<div class="wrap">
+				 	<h2>배송안내</h2>
+				 	<p>
+					현재 물량 부족으로 5/1일 이후 순차적으로 발송 할 예정이며, 연휴 파업 등과 겹칠 시 배송이 지연될 수 있음을 알려드립니다</p>
+				</div>
+				 </div>
+
+
+
+				 
+			</div>
+	
+
+
+	<footer>
+		해충퇴치 향갑노리개&copy; 2024 이소은<br>
+
+		이 프로젝트는 2024 서울과학기술대학교 웹퍼블리싱 수업의 일환으로 제작된 가상의 브랜드 콜라보레이션으로 현실과는 무관합니다
+	</footer>
+	
+
+</body>
+
+</html>
